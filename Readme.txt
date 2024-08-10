@@ -6,7 +6,7 @@ The Problem: When trying to access gaming servers like CS:GO/R6S on university L
 - Very high ping or round trip latency times
 - Server disconnection issues
 
-The typical latency to various nearby servers looks like this:
+The typical latency to various nearby servers from New Delhi looks like this:
 
 - Mumbai: 24ms
 - Chennai: 39ms
@@ -29,16 +29,18 @@ But this was not the case for non-game TCP traffic. So I decided to create to de
 
 - Create a Windows Virtual Machine on Login to it remotely
 
-- Download & Install SoftEther VPN Server on the cloud VM
+- Download & Install SoftEther VPN Server on the cloud VM and set it up on the VM.
 http://www.softether-download.com/en.aspx?product=softether
 
 - Download Softether VPN client and install on PC
 http://www.softether-download.com/en.aspx?product=softether
 
-- 
+- Get IP address of Virtual Machine where Softether VPN is installed
 
-- 
+- Launch Softether VPN client on your PC and connect to server on above IP address, 
 
-- 
+- Now check the ping to various CS:GO servers across the globe, there should be a marked reduction in the latency.
 
-- 
+- This tool can be used to check the ping: https://github.com/Weeeishy/CSGO-Ping-Tester
+OR
+- Use this website: https://pingtestlive.com/cs-go
